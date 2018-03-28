@@ -1,0 +1,6 @@
+$$\sigma((10a+p)^{10b+q})=\sum_{n=0}^{10b+q}(10a+p)^n=\sum_{n=0}^{10b+q}(9a+a+p)^n$$
+$$=\sum_{n=0}^{10b+q}\left(\sum_{m=0}^n\binom{n}m(9a)^m(a+p)^{n-m}\right)=\sum_{n=1}^{10b+q}\left(\sum_{m=0}^n\binom{n}m(9a)^m(a+p)^{n-m}\right)+1$$
+$$=\sum_{n=1}^{10b+q}\left(\sum_{m=1}^n\binom{n}m(9a)^m(a+p)^{n-m}+(a+p)^n\right)+1$$
+$$=\sum_{n=1}^{10b+q}\left(\sum_{m=1}^n\binom{n}m(9a)^m(a+p)^{n-m}\right)+\sum_{n=1}^{10b+q}(a+p)^n+1$$
+$$=\sum_{n=1}^{10b+q}\left(\sum_{m=1}^n\binom{n}m(9a)^m(a+p)^{n-m}\right)+\sum_{n=0}^{10b+q}(a+p)^n$$
+$$=\sum_{n=1}^{10b+q}\left(\sum_{m=1}^n\binom{n}m(9a)^m(a+p)^{n-m}\right)+\frac{(a+p)^{n+1}-1}{a+p-1}$$
