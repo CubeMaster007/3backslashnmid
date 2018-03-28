@@ -3,4 +3,12 @@ $$=\sum_{n=0}^{10b+q}\left(\sum_{m=0}^n\binom{n}m(9a)^m(a+p)^{n-m}\right)=\sum_{
 $$=\sum_{n=1}^{10b+q}\left(\sum_{m=1}^n\binom{n}m(9a)^m(a+p)^{n-m}+(a+p)^n\right)+1$$
 $$=\sum_{n=1}^{10b+q}\left(\sum_{m=1}^n\binom{n}m(9a)^m(a+p)^{n-m}\right)+\sum_{n=1}^{10b+q}(a+p)^n+1$$
 $$=\sum_{n=1}^{10b+q}\left(\sum_{m=1}^n\binom{n}m(9a)^m(a+p)^{n-m}\right)+\sum_{n=0}^{10b+q}(a+p)^n$$
-$$=\sum_{n=1}^{10b+q}\left(\sum_{m=1}^n\binom{n}m(9a)^m(a+p)^{n-m}\right)+\frac{(a+p)^{n+1}-1}{a+p-1}$$
+$$=\sum_{n=1}^{10b+q}\left(\sum_{m=1}^n\binom{n}m(9a)^m(a+p)^{n-m}\right)+\frac{(a+p)^{10b+q+1}-1}{a+p-1}$$
+$$=\sum_{n=1}^{10b+q}\left(9a\sum_{m=1}^n\binom{n}m(9a)^{m-1}(a+p)^{n-m}\right)+\frac{(a+p)^{10b+q+1}-1}{a+p-1}$$
+$$=9a\sum_{n=1}^{10b+q}\left(\sum_{m=1}^n\binom{n}m(9a)^{m-1}(a+p)^{n-m}\right)+\frac{(a+p)^{10b+q+1}-1}{a+p-1}$$
+Thus
+$$3\mid\sigma((10a+p)^{10b+q})$$
+$$\iff3\mid9a\sum_{n=1}^{10b+q}\left(\sum_{m=1}^n\binom{n}m(9a)^{m-1}(a+p)^{n-m}\right)+\frac{(a+p)^{10b+q+1}-1}{a+p-1}$$
+$$\iff3\mid\frac{(a+p)^{10b+q+1}-1}{a+p-1}$$
+
+$$\frac{(a+p)^{10b+q+1}-1}{a+p-1}=\frac{\sum\limits_{n=0}^{10b+q+1}\binom{10b+q+1}na^np^{10b+q+1-n}-1}{a+p-1}$$
