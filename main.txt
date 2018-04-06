@@ -38,3 +38,10 @@ $$3\mid\left(\sum_{n=0}^{10b+q}(a+p+1)^n\right)$$
 $$3\mid\left(\sum_{n=1}^{10b+q}\left(\sum_{m=1}^n\binom{n}m(a+p)^m\right)+10b+q+1\right)$$
 
 $$\frac{(a+p)^{10b+q+1}-1}{a+p-1}=\frac{\sum\limits_{n=0}^{10b+q+1}\binom{10b+q+1}na^np^{10b+q+1-n}-1}{a+p-1}$$
+
+\vspace{.1in}\hline\vspace{.1in}
+
+Suppose $k\mid\sigma(a^b)$, $a$ prime, $b>0$.\\
+Let $k\mid(a-g)$; $0<g<k$ ($g\equiv a\pmod k$)
+$$\sigma(a^b)=\sum_{n=0}^b(a-g+g)^n=\sum_{n=1}^b\left(\sum_{m=1}^n\binom{n}m(a-g)^mg^{n-m}\right)+\sum_{n=0}^bg^n$$
+So $k\mid\sigma(a^b)\iff k\mid\sum\limits_{n=0}^bg^n$
